@@ -664,7 +664,7 @@ footer { background: var(--bg2); border-top: 1px solid var(--border); padding: v
     <li><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+learn+more." target="_blank" class="nav-cta">Book Session</a></li>
   </ul>
   <!-- Hamburger — mobile only -->
-  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMobile()">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -1541,6 +1541,20 @@ function nav(id) {
   const links = document.querySelectorAll('.nav-links a');
   const rootId = id.startsWith('loc-') ? 'locations' : id;
   if (navMap[rootId] !== undefined) links[navMap[rootId]].classList.add('active');
+}
+
+function toggleMobile() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById('hamburger-btn');
+  const open = menu.classList.toggle('is-open');
+  btn.setAttribute('aria-expanded', open);
+}
+
+function closeMobile() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById('hamburger-btn');
+  menu.classList.remove('is-open');
+  btn.setAttribute('aria-expanded', 'false');
 }
 
 function faq(btn) {
