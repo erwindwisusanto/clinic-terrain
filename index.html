@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAD+ Therapy Bali — Clinical Precision, Villa Delivery | Clinic Terrain</title>
+<meta name="description" content="Physician-supervised NAD+ IV therapy delivered to your villa across Bali. Cold-chain verified. Same-day availability. Operated under Cepat Sehat Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════
+   TITANIUM WEB OS v3.0 — RESPONSIVE CSS
+   Mobile-first · clamp() typography · min-width breakpoints
+   T1 checks: RC1–RC6 all satisfied by construction
+══════════════════════════════════════════════════════════ */
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* RC4 — images responsive globally */
+img, video, iframe { max-width: 100%; height: auto; display: block; }
+
+/* ── CSS VARIABLES ── */
+:root {
+  /* Brand colours */
+  --bg:#0c0b09; --bg2:#111009; --bg3:#161410; --bg4:#1c1a14;
+  --border:#252218; --border2:#302c20;
+  --gold:#c9a84c; --gl:#e8c97a; --gd:#7a6530;
+  --ivory:#f0ead8; --id:#a09880; --if:#4a4538;
+  --text:#e8e0cc; --td:#8a8070; --tf:#3a3528;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',sans-serif;
+  --mono:'DM Mono',monospace;
+  --wa:#25D366;
+
+  /* ── V3 FLUID TYPOGRAPHY (clamp) ── */
+  --text-xs:   clamp(0.7rem,   1.5vw, 0.8rem);
+  --text-sm:   clamp(0.8rem,   1.8vw, 0.9rem);
+  --text-base: clamp(1rem,     2vw,   1.125rem);
+  --text-lg:   clamp(1.1rem,   2.5vw, 1.25rem);
+  --text-xl:   clamp(1.2rem,   3vw,   1.5rem);
+  --text-2xl:  clamp(1.5rem,   4vw,   2rem);
+  --text-3xl:  clamp(1.8rem,   5vw,   3rem);
+  --text-hero: clamp(2.4rem,   7vw,   4.5rem);
+
+  /* ── V3 FLUID SPACING ── */
+  --sp-2:  clamp(0.5rem,  1vw,   0.75rem);
+  --sp-3:  clamp(0.75rem, 1.5vw, 1rem);
+  --sp-4:  clamp(1rem,    2vw,   1.5rem);
+  --sp-6:  clamp(1.5rem,  3vw,   2.5rem);
+  --sp-8:  clamp(2rem,    4vw,   4rem);
+  --sp-12: clamp(3rem,    6vw,   6rem);
+  --sp-16: clamp(4rem,    8vw,   8rem);
+
+  /* ── BREAKPOINTS ── */
+  --bp-sm:  480px;
+  --bp-md:  768px;
+  --bp-lg:  1024px;
+  --bp-xl:  1280px;
+}
+
+/* ── BASE ── */
+html { font-size: 16px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  overflow-x: hidden;
+  padding-bottom: 48px; /* bottom nav bar */
+}
+
+/* ── CONTAINER ── */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--sp-4);
+}
+@media (min-width: 768px)  { .container { padding-inline: var(--sp-6); } }
+@media (min-width: 1280px) { .container { padding-inline: var(--sp-8); } }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  background: rgba(12,11,9,.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 var(--sp-4);
+  gap: var(--sp-4);
+}
+
+.logo {
+  font-family: var(--serif);
+  font-size: clamp(17px, 3vw, 22px);
+  font-weight: 400;
+  color: var(--ivory);
+  cursor: pointer;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo span { color: var(--gold); }
+
+/* Desktop nav links — hidden on mobile */
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: clamp(16px, 2vw, 28px);
+  list-style: none;
+}
+@media (min-width: 768px) { .nav-links { display: flex; } }
+
+.nav-links a {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--td);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+.nav-cta {
+  background: var(--gold) !important;
+  color: #0c0b09 !important;
+  padding: 8px 16px !important;
+  border-radius: 2px;
+  font-size: var(--text-xs) !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--gl) !important; }
+
+/* ── HAMBURGER — mobile only ── */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: var(--sp-2);
+  background: none;
+  border: none;
+  flex-shrink: 0;
+}
+.hamburger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--ivory);
+  transition: transform .3s, opacity .3s;
+  border-radius: 1px;
+}
+@media (min-width: 768px) { .hamburger { display: none; } }
+
+/* Mobile menu drawer */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: var(--sp-4);
+  z-index: 490;
+  gap: 0;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+.mobile-menu.is-open { display: flex; }
+.mobile-menu a {
+  padding: var(--sp-3) var(--sp-2);
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--text-lg);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  font-family: var(--serif);
+  font-weight: 300;
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu-wa {
+  display: flex !important;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--wa);
+  color: #fff !important;
+  border-radius: 2px;
+  margin-top: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4) !important;
+  font-family: var(--sans) !important;
+  font-size: var(--text-base) !important;
+  font-weight: 600 !important;
+  border: none !important;
+  justify-content: center;
+}
+
+/* ── PAGE INDICATOR ── */
+#page-indicator {
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+  padding: 8px var(--sp-4);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  color: var(--td);
+  flex-wrap: wrap;
+}
+
+/* ── VIEWS / SECTIONS ── */
+.view { display: none; padding-top: 64px; }
+.view.active { display: block; }
+
+/* RC5 — hero uses 100svh */
+.hero {
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  /* Mobile: less padding */
+  padding: var(--sp-12) var(--sp-4) var(--sp-8);
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .hero { padding: var(--sp-16) var(--sp-8) var(--sp-12); }
+}
+
+.hbg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.hov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,11,9,.97) 0%, rgba(12,11,9,.5) 55%, rgba(12,11,9,.2) 100%); }
+.hc { position: relative; z-index: 2; max-width: 820px; width: 100%; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--sp-3);
+  display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+
+h1 {
+  font-family: var(--serif);
+  font-size: var(--text-hero);
+  font-weight: 300;
+  color: var(--ivory);
+  line-height: 1.08;
+  margin-bottom: var(--sp-4);
+  letter-spacing: -.01em;
+}
+h1 em, h2 em { font-style: italic; color: var(--gl); }
+
+.hero-desc {
+  font-size: var(--text-lg);
+  color: var(--id);
+  max-width: 600px;
+  line-height: 1.75;
+  margin-bottom: var(--sp-6);
+}
+
+/* RC6 — CTA buttons width:100% on mobile */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  align-items: stretch;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .actions { flex-direction: row; align-items: center; width: auto; }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--gold);
+  color: #0c0b09;
+  padding: var(--sp-3) var(--sp-6);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  transition: background .2s, transform .15s;
+  width: 100%; /* RC6 */
+}
+@media (min-width: 480px) { .btn { width: auto; } }
+
+.btn:hover { background: var(--gl); transform: translateY(-2px); }
+.btn-wa { background: var(--wa); color: #fff; }
+.btn-wa:hover { background: #1fbd5a; }
+.btn-ghost {
+  background: none;
+  border: 1px solid var(--border2);
+  color: var(--id);
+  padding: calc(var(--sp-3) - 1px) calc(var(--sp-6) - 1px);
+}
+.btn-ghost:hover { border-color: var(--gd); color: var(--gold); transform: none; }
+
+/* ── SECTIONS ── */
+section {
+  padding-block: var(--sp-12);
+  padding-inline: var(--sp-4);
+  border-top: 1px solid var(--border);
+}
+@media (min-width: 768px) {
+  section { padding-inline: var(--sp-8); }
+}
+@media (min-width: 1024px) {
+  section { padding-block: var(--sp-16); }
+}
+.s-alt { background: var(--bg2); }
+
+.sey {
+  font-family: var(--mono);
+  font-size: var(--text-xs);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gd);
+  margin-bottom: var(--sp-3);
+  display: flex; align-items: center; gap: 10px;
+}
+.sey::before { content: ''; width: 20px; height: 1px; background: var(--gd); }
+
+h2 {
+  font-family: var(--serif);
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  color: var(--ivory);
+  line-height: 1.13;
+  margin-bottom: var(--sp-3);
+}
+.sub {
+  font-size: var(--text-lg);
+  color: var(--td);
+  max-width: 580px;
+  line-height: 1.85;
+  margin-bottom: var(--sp-8);
+}
+p.b {
+  font-size: var(--text-base);
+  color: var(--td);
+  line-height: 1.85;
+  margin-bottom: var(--sp-4);
+  max-width: 700px;
+}
+p.b strong { color: var(--ivory); font-weight: 500; }
+p.b em { color: var(--id); font-style: italic; }
+
+/* ── RESPONSIVE GRIDS — mobile first (1 col) ── */
+.two, .two-r {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .two  { grid-template-columns: 1.4fr 1fr; gap: var(--sp-8); }
+  .two-r { grid-template-columns: 1fr 1.4fr; gap: var(--sp-8); }
+}
+
+.three {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (min-width: 640px)  { .three { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .three { grid-template-columns: repeat(3, 1fr); } }
+
+.four {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (min-width: 480px)  { .four { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .four { grid-template-columns: repeat(4, 1fr); } }
+
+.auto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (min-width: 480px)  { .auto { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .auto { grid-template-columns: repeat(4, 1fr); } }
+
+/* ── CARDS ── */
+.card {
+  background: var(--bg2);
+  padding: var(--sp-6) var(--sp-4);
+  transition: background .2s;
+}
+.card:hover { background: var(--bg3); }
+.card-num  { font-family: var(--mono); font-size: var(--text-xs); color: var(--tf); letter-spacing: .1em; margin-bottom: var(--sp-4); }
+.card-dose { font-family: var(--mono); font-size: var(--text-xs); color: var(--gold); letter-spacing: .08em; margin-bottom: 6px; }
+.card-name { font-family: var(--serif); font-size: var(--text-2xl); font-weight: 400; color: var(--ivory); margin-bottom: var(--sp-3); line-height: 1.2; }
+.card-desc { font-size: var(--text-base); color: var(--td); line-height: 1.7; margin-bottom: var(--sp-4); }
+.card-quote { font-family: var(--serif); font-style: italic; font-size: var(--text-lg); color: var(--id); border-left: 2px solid var(--border2); padding-left: var(--sp-3); margin-bottom: var(--sp-4); line-height: 1.65; }
+.card-price { font-family: var(--mono); font-size: var(--text-base); color: var(--gd); }
+.card-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-3); border-top: 1px solid var(--border); padding-top: var(--sp-4); margin-top: auto; }
+.card-foot-price { font-family: var(--serif); font-size: var(--text-xl); font-weight: 400; color: var(--gl); }
+.card-foot-price span { font-size: var(--text-xs); color: var(--td); font-family: var(--sans); }
+.card-link { font-family: var(--mono); font-size: var(--text-xs); color: var(--gold); cursor: pointer; text-decoration: none; transition: color .2s; }
+.card-link:hover { color: var(--gl); }
+
+/* ── PHOTOS ── */
+.photo { border-radius: 4px; overflow: hidden; background: var(--bg4); border: 1px solid var(--border); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-t { height: clamp(240px, 50vw, 440px); }
+.photo-m { height: clamp(180px, 35vw, 290px); }
+.photo-s { height: clamp(140px, 25vw, 200px); }
+.pgrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+
+/* ── TRUST GRID ── */
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: var(--sp-8);
+}
+@media (min-width: 480px) { .trust-grid { grid-template-columns: 1fr 1fr; } }
+
+.trust-item { background: var(--bg2); padding: var(--sp-4) var(--sp-4); display: flex; align-items: center; gap: var(--sp-3); }
+.ti-icon { font-family: var(--mono); font-size: clamp(16px, 3vw, 20px); color: var(--gold); flex-shrink: 0; }
+.ti-label { font-size: var(--text-sm); font-weight: 500; color: var(--ivory); }
+.ti-sub { font-size: var(--text-xs); color: var(--td); }
+
+/* ── STAT CARDS ── */
+.stat-card { background: var(--bg3); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 4px; padding: var(--sp-4) var(--sp-6); transition: background .2s; }
+.stat-card:hover { background: var(--bg4); }
+.stat-num { font-family: var(--serif); font-size: clamp(36px, 6vw, 52px); font-weight: 300; color: var(--ivory); line-height: 1; margin-bottom: 6px; }
+.stat-num sup { font-size: clamp(16px, 3vw, 22px); color: var(--gold); }
+.stat-label { font-size: var(--text-xs); color: var(--td); letter-spacing: .06em; text-transform: uppercase; }
+
+/* ── DIFF CARDS ── */
+.diff-icon { font-family: var(--mono); font-size: clamp(22px, 4vw, 28px); color: var(--gold); margin-bottom: var(--sp-3); display: block; }
+.diff-title { font-family: var(--serif); font-size: var(--text-xl); font-weight: 400; color: var(--ivory); margin-bottom: var(--sp-3); }
+.diff-body { font-size: var(--text-base); color: var(--td); line-height: 1.75; }
+.diff-body strong { color: var(--ivory); font-weight: 500; }
+
+/* ── TESTIMONIALS ── */
+.testi { background: var(--bg2); padding: var(--sp-6) var(--sp-4); transition: background .2s; }
+.testi:hover { background: var(--bg3); }
+.tq { font-family: var(--serif); font-style: italic; font-size: var(--text-xl); font-weight: 300; color: var(--id); line-height: 1.65; margin-bottom: var(--sp-4); }
+.tq::before { content: 'C'; font-size: 42px; color: var(--gd); font-style: normal; line-height: 0; vertical-align: -18px; margin-right: 3px; }
+.ta-name { font-size: var(--text-sm); font-weight: 500; color: var(--ivory); }
+.ta-meta { font-size: var(--text-xs); color: var(--td); margin-top: 2px; }
+.ta-prot { font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); margin-top: 3px; }
+
+/* ── FAQ ── */
+.faq-list { max-width: 760px; display: flex; flex-direction: column; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-btn { width: 100%; background: none; border: none; padding: var(--sp-4) 0; display: flex; justify-content: space-between; align-items: center; gap: var(--sp-4); cursor: pointer; text-align: left; }
+.fq { font-family: var(--serif); font-size: var(--text-xl); font-weight: 400; color: var(--ivory); line-height: 1.3; }
+.fa { font-family: var(--mono); font-size: 20px; color: var(--gd); flex-shrink: 0; transition: transform .25s; }
+.faq-item.open .fa { transform: rotate(45deg); }
+.fan { overflow: hidden; max-height: 0; transition: max-height .35s ease; }
+.fan-inner { padding: 0 0 var(--sp-4); font-size: var(--text-base); color: var(--td); line-height: 1.8; }
+
+/* ── BIOAVAIL CHART ── */
+.chart { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: var(--sp-6); }
+.chart-title { font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); letter-spacing: .12em; text-transform: uppercase; margin-bottom: var(--sp-6); }
+.bar-row { display: grid; grid-template-columns: clamp(80px, 20vw, 130px) 1fr 50px; gap: var(--sp-3); align-items: center; margin-bottom: var(--sp-3); }
+.bar-label { font-size: var(--text-xs); color: var(--td); }
+.bar-track { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 3px; background: var(--gold); }
+.bar-fill.dim { background: var(--border2); }
+.bar-pct { font-family: var(--mono); font-size: var(--text-xs); color: var(--gold); text-align: right; }
+.bar-pct.dim { color: var(--td); }
+
+/* ── CITATIONS ── */
+.cite-links { display: flex; flex-direction: column; gap: var(--sp-2); margin-top: var(--sp-4); }
+.cite { display: flex; align-items: center; gap: var(--sp-2); font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); text-decoration: none; padding: var(--sp-2) var(--sp-3); background: var(--bg3); border: 1px solid var(--border); border-radius: 3px; transition: all .2s; }
+.cite:hover { border-color: var(--gd); color: var(--gold); }
+
+/* ── PHYSICIAN ── */
+.phy-card { background: var(--bg3); border: 1px solid var(--border2); border-radius: 4px; padding: var(--sp-6); display: grid; grid-template-columns: 1fr; gap: var(--sp-4); align-items: start; }
+@media (min-width: 640px) { .phy-card { grid-template-columns: 160px 1fr; gap: var(--sp-6); } }
+.phy-av { width: clamp(80px, 20vw, 160px); height: clamp(80px, 20vw, 160px); border-radius: 4px; background: var(--bg4); border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: clamp(28px, 5vw, 52px); color: var(--border2); }
+.phy-name { font-family: var(--serif); font-size: var(--text-2xl); font-weight: 400; color: var(--ivory); margin-bottom: 4px; }
+.phy-title { font-family: var(--mono); font-size: var(--text-xs); color: var(--gold); letter-spacing: .1em; text-transform: uppercase; margin-bottom: var(--sp-3); }
+.kki-badge { display: inline-flex; align-items: center; gap: var(--sp-2); background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.2); padding: 6px 12px; border-radius: 2px; font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); margin-bottom: var(--sp-4); }
+.phy-bio { font-size: var(--text-base); color: var(--td); line-height: 1.8; }
+.disclaimer { background: rgba(201,168,76,.04); border: 1px solid rgba(201,168,76,.12); border-radius: 4px; padding: var(--sp-4); margin-top: var(--sp-6); font-size: var(--text-base); color: var(--td); line-height: 1.7; }
+.disclaimer strong { color: var(--id); }
+
+/* ── QF STRIP ── */
+.qf-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border-bottom: 1px solid var(--border);
+}
+@media (min-width: 768px) { .qf-strip { grid-template-columns: repeat(4, 1fr); } }
+.qf { background: var(--bg2); padding: var(--sp-4); }
+.qf-l { font-family: var(--mono); font-size: var(--text-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--gd); margin-bottom: 6px; }
+.qf-v { font-family: var(--serif); font-size: var(--text-xl); font-weight: 400; color: var(--ivory); margin-bottom: 2px; }
+.qf-s { font-size: var(--text-xs); color: var(--td); }
+
+/* ── LOC CARDS ── */
+.loc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (min-width: 480px)  { .loc-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .loc-grid { grid-template-columns: repeat(3, 1fr); } }
+.loc-card { background: var(--bg2); padding: var(--sp-6) var(--sp-4); cursor: pointer; transition: background .2s; }
+.loc-card:hover { background: var(--bg3); }
+.loc-name { font-family: var(--serif); font-size: var(--text-2xl); font-weight: 400; color: var(--ivory); margin-bottom: var(--sp-3); }
+.loc-desc { font-size: var(--text-sm); color: var(--td); line-height: 1.7; margin-bottom: var(--sp-4); }
+.loc-tag { font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); letter-spacing: .08em; text-transform: uppercase; border: 1px solid rgba(201,168,76,.2); padding: 3px 8px; border-radius: 2px; display: inline-block; }
+.loc-arrow { font-size: var(--text-xs); color: var(--gd); margin-top: var(--sp-3); font-family: var(--mono); }
+
+/* ── BREADCRUMB ── */
+.bc { font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); letter-spacing: .08em; margin-bottom: var(--sp-4); cursor: pointer; }
+.bc span { color: var(--td); }
+.bc a { color: var(--gd); text-decoration: none; cursor: pointer; }
+.bc a:hover { color: var(--gold); }
+
+/* ── NEARBY ── */
+.nearby { display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-top: var(--sp-4); }
+.nearby a { font-family: var(--mono); font-size: var(--text-xs); color: var(--td); text-decoration: none; cursor: pointer; padding: 7px 14px; border: 1px solid var(--border); border-radius: 2px; transition: all .2s; min-height: 44px; display: flex; align-items: center; } /* 44px touch target */
+.nearby a:hover { border-color: var(--gd); color: var(--gold); }
+
+/* ── LOCAL GRID ── */
+.local-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+}
+@media (min-width: 768px) { .local-grid { grid-template-columns: repeat(4, 1fr); } }
+.local { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: var(--sp-4); transition: border-color .2s; }
+.local:hover { border-color: var(--border2); }
+.local-icon { font-size: clamp(18px, 3vw, 22px); margin-bottom: var(--sp-3); }
+.local-title { font-size: var(--text-sm); font-weight: 500; color: var(--ivory); margin-bottom: 4px; }
+.local-body { font-size: var(--text-xs); color: var(--td); line-height: 1.6; }
+
+/* ── LABS PANELS ── */
+.labs-panel { background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: var(--sp-4); display: flex; flex-direction: column; gap: var(--sp-2); margin-bottom: var(--sp-3); transition: border-color .2s; }
+@media (min-width: 640px) { .labs-panel { flex-direction: row; align-items: center; justify-content: space-between; } }
+.labs-panel:hover { border-color: var(--border2); }
+.lp-name { font-family: var(--serif); font-size: var(--text-xl); font-weight: 400; color: var(--ivory); margin-bottom: 4px; }
+.lp-desc { font-size: var(--text-xs); color: var(--td); line-height: 1.5; }
+.lp-price { font-family: var(--mono); font-size: var(--text-sm); color: var(--gold); white-space: nowrap; flex-shrink: 0; }
+.terrain-badge { display: inline-flex; align-items: center; gap: var(--sp-2); font-family: var(--mono); font-size: var(--text-xs); color: var(--gd); letter-spacing: .1em; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(201,168,76,.2); border-radius: 2px; margin-bottom: var(--sp-4); }
+
+/* ── CTA BAND ── */
+.cta { background: linear-gradient(135deg, rgba(201,168,76,.06) 0%, transparent 100%); border-top: 1px solid rgba(201,168,76,.1); padding: var(--sp-12) var(--sp-4); text-align: center; }
+@media (min-width: 768px) { .cta { padding: var(--sp-16) var(--sp-8); } }
+.cta h2 { font-family: var(--serif); font-size: var(--text-3xl); font-weight: 300; color: var(--ivory); margin-bottom: var(--sp-4); }
+.cta p { font-size: var(--text-lg); color: var(--td); margin-bottom: var(--sp-6); max-width: 440px; margin-left: auto; margin-right: auto; }
+.cta-badges { display: flex; justify-content: center; gap: var(--sp-4); flex-wrap: wrap; margin-bottom: var(--sp-6); }
+.cb { font-family: var(--mono); font-size: var(--text-xs); color: var(--td); display: flex; align-items: center; gap: 6px; }
+.cb::before { content: '·'; color: var(--gold); font-size: 16px; }
+
+/* ── FOOTER ── */
+footer { background: var(--bg2); border-top: 1px solid var(--border); padding: var(--sp-12) var(--sp-4) var(--sp-6); }
+@media (min-width: 768px) { footer { padding: var(--sp-12) var(--sp-8) var(--sp-6); } }
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  margin-bottom: var(--sp-8);
+}
+@media (min-width: 640px)  { .footer-top { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) { .footer-top { grid-template-columns: 1.5fr 1fr 1fr 1fr; } }
+.footer-brand { font-family: var(--serif); font-size: var(--text-2xl); font-weight: 400; color: var(--ivory); margin-bottom: var(--sp-3); }
+.footer-brand span { color: var(--gold); }
+.footer-desc { font-size: var(--text-sm); color: var(--td); line-height: 1.7; margin-bottom: var(--sp-3); }
+.footer-phy { font-size: var(--text-xs); color: var(--tf); padding: var(--sp-3); background: var(--bg3); border: 1px solid var(--border); border-radius: 3px; margin-bottom: var(--sp-3); line-height: 1.7; }
+.footer-phy strong { color: var(--id); }
+.footer-disc { font-size: var(--text-xs); color: var(--tf); line-height: 1.7; }
+.fcol-title { font-family: var(--mono); font-size: var(--text-xs); letter-spacing: .14em; text-transform: uppercase; color: var(--gd); margin-bottom: var(--sp-3); }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: var(--sp-3); }
+.footer-links a { font-size: var(--text-sm); color: var(--td); text-decoration: none; cursor: pointer; transition: color .2s; min-height: 44px; display: flex; align-items: center; } /* 44px touch */
+.footer-links a:hover { color: var(--ivory); }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: var(--sp-4); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-3); }
+.footer-copy { font-size: var(--text-xs); color: var(--tf); }
+.footer-legal { display: flex; gap: var(--sp-4); flex-wrap: wrap; }
+.footer-legal a { font-size: var(--text-xs); color: var(--tf); text-decoration: none; cursor: pointer; }
+.footer-legal a:hover { color: var(--td); }
+
+/* ── WA STICKY — mobile only per v3 spec ── */
+.wa-sticky {
+  position: fixed;
+  bottom: 80px; /* above bottom nav bar */
+  right: var(--sp-4);
+  z-index: 400;
+  width: 56px; height: 56px;
+  min-height: 44px; /* accessibility touch target */
+  background: var(--wa);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37,211,102,.35);
+  transition: transform .2s;
+}
+.wa-sticky:hover { transform: scale(1.08); }
+.wa-sticky svg { width: 26px; height: 26px; fill: white; }
+@media (min-width: 1024px) {
+  .wa-sticky { display: none; } /* desktop: nav CTA sufficient */
+}
+
+/* ── BOTTOM NAV BAR ── */
+#bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 300;
+  background: rgba(12,11,9,.97);
+  border-top: 1px solid var(--border2);
+  height: 48px;
+  display: flex; align-items: center;
+  padding: 0 var(--sp-3);
+  gap: var(--sp-2);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <span class="logo" onclick="nav('home')">Clinic <span>Terrain</span></span>
+  <!-- Desktop links -->
+  <ul class="nav-links">
+    <li><a onclick="nav('protocols')">Protocols</a></li>
+    <li><a onclick="nav('labs')">Lab Testing</a></li>
+    <li><a onclick="nav('science')">The Science</a></li>
+    <li><a onclick="nav('physician')">Our Team</a></li>
+    <li><a onclick="nav('locations')">Locations</a></li>
+    <li><a onclick="nav('faq')">FAQ</a></li>
+    <li><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+learn+more." target="_blank" class="nav-cta">Book Session</a></li>
+  </ul>
+  <!-- Hamburger — mobile only -->
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-menu" id="mobile-menu" role="menu">
+  <a onclick="nav('home');closeMobile()">Home</a>
+  <a onclick="nav('protocols');closeMobile()">Protocols</a>
+  <a onclick="nav('labs');closeMobile()">Lab Testing</a>
+  <a onclick="nav('science');closeMobile()">The Science</a>
+  <a onclick="nav('physician');closeMobile()">Our Medical Team</a>
+  <a onclick="nav('locations');closeMobile()">Locations</a>
+  <a onclick="nav('faq');closeMobile()">FAQ</a>
+  <a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+learn+more." target="_blank" class="mobile-menu-wa" onclick="closeMobile()">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+    Book via WhatsApp
+  </a>
+</div>
+<!-- PAGE INDICATOR -->
+<div id="page-indicator" style="background:var(--bg3);border-bottom:1px solid var(--border);padding:8px 48px;display:flex;align-items:center;gap:16px;font-family:var(--mono);font-size:11px;color:var(--td);">
+  <span style="color:var(--gd);letter-spacing:.1em;text-transform:uppercase;">Page</span>
+  <span style="color:var(--border2);">›</span>
+  <span id="current-page-label" style="color:var(--gold);">Home</span>
+  <span style="flex:1;"></span>
+  <span style="color:var(--tf);">clinicterrain.com</span>
+  <span style="color:var(--border2);">·</span>
+  <span style="color:var(--tf);">Preview — all pages in one file</span>
+</div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/6282395439535" class="wa-sticky" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+
+<!-- ═════════════════════════════════════
+     HOME
+════════════════════════════════════════ -->
+<div id="view-home" class="view active">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?w=1920&q=80&fit=crop&auto=format');"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="eyebrow">Clinical NAD+ Protocols · Bali</div>
+      <h1>The body has a terrain.<br><em>Ours is the science</em><br>to navigate it.</h1>
+      <p class="hero-desc">NAD+ levels drop ~50% between age 40 and 60.<br>People feel it before they measure it.<br>We address it. At your villa. Same day.</p>
+      <div class="actions">
+        <a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+session." target="_blank" class="btn">Book Your Session</a>
+        <button class="btn btn-ghost" onclick="nav('protocols')">View Protocols</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-item"><span class="ti-icon">❄</span><div><div class="ti-label">Cold-Chain Verified</div><div class="ti-sub">Temperature verified. On arrival. Every time.</div></div></div>
+    <div class="trust-item"><span class="ti-icon">◎</span><div><div class="ti-label">Pre-Infusion Assessment</div><div class="ti-sub">No exceptions. No shortcuts.</div></div></div>
+    <div class="trust-item"><span class="ti-icon">◷</span><div><div class="ti-label">Same-Day Availability</div><div class="ti-sub">Any zone. Any hour.</div></div></div>
+    <div class="trust-item"><span class="ti-icon">≡</span><div><div class="ti-label">Dose Architecture</div><div class="ti-sub">Right dose. Not highest dose.</div></div></div>
+  </div>
+
+  <section>
+    <div class="sey">NAD+ Protocols</div>
+    <h2>Four Calibrated Doses.<br><em>One Cellular Objective.</em></h2>
+    <p class="sub">Four doses. One objective.<br>Your physician picks the right one. Not the most expensive one.</p>
+    <div class="four">
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-num">01</div>
+        <div class="card-dose">100 mg · The Calibration</div>
+        <div class="card-name">Terrain Foundation</div>
+        <p class="card-desc">First session. Establishes your baseline.
+No guesswork. No assumptions.</p>
+        <div class="card-quote">Clients report a shift in cognitive clarity within 2–4 hours.<br>Sleep quality on night one is the first measurable signal.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 2.390.000<span> /session</span></div><span class="card-link" onclick="nav('protocols')">Book →</span></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-num">02</div>
+        <div class="card-dose">250 mg · The Restoration</div>
+        <div class="card-name">Terrain Restore</div>
+        <p class="card-desc">Moderate depletion. Clear head. Better sleep.
+Most booked protocol in Bali.</p>
+        <div class="card-quote">"I forgot I could feel like this." — Terrain Restore client, 250mg session.<br>Cognitive clarity within 24 hours. Physical energy follows.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 3.390.000<span> /session</span></div><span class="card-link" onclick="nav('protocols')">Book →</span></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-num">03</div>
+        <div class="card-dose">500 mg · The Reclamation</div>
+        <div class="card-name">Terrain Renew</div>
+        <p class="card-desc">Significant debt. Serious reset.
+Effects build over 72 hours.</p>
+        <div class="card-quote">Day three post-session is typically the breakthrough — not day one.<br>Mitochondrial restoration unfolds over 48–72 hours.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 3.890.000<span> /session</span></div><span class="card-link" onclick="nav('protocols')">Book →</span></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-num">04</div>
+        <div class="card-dose">750 mg · The Sovereign</div>
+        <div class="card-name">Terrain Prime</div>
+        <p class="card-desc">Maximum dose. Physician clearance required.
+4–6 hours. Results held for weeks.</p>
+        <div class="card-quote">Not a peak followed by regression — a new baseline.<br>Most Terrain Prime (750mg) clients report the lift holding for 2–3 weeks.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 4.390.000<span> /session</span></div><span class="card-link" onclick="nav('protocols')">Book →</span></div>
+      </div>
+    </div>
+    <div style="margin-top:20px;text-align:center;"><button class="btn btn-ghost" onclick="nav('protocols')" style="margin-top:8px;">View All Protocols + Lab Testing →</button></div>
+  </section>
+
+  <section class="s-alt">
+    <div class="sey">Clinical Standards</div>
+    <h2>What separates <em>clinical</em><br>IV therapy from IV tourism.</h2>
+    <p class="sub">Most IV services here: nurse, fixed menu, no cold-chain verification.<br>Us: physician assessment, compound integrity check, dose confirmation.<br>Every single session.</p>
+    <div class="three">
+      <div class="card"><span class="diff-icon">❄</span><div class="diff-title">Cold-Chain Verification</div><p class="diff-body">Compound arrives cold-chain verified.<br>Physician checks it on arrival.<br><strong>Before a single milligram enters your IV line.</strong></p></div>
+      <div class="card"><span class="diff-icon">◎</span><div class="diff-title">Pre-Infusion Assessment</div><p class="diff-body">Vitals. History. Medications. Dose confirmed.<br>If something is wrong, we stop.<br><strong>No session proceeds without clearance.</strong></p></div>
+      <div class="card"><span class="diff-icon">≡</span><div class="diff-title">Dose Architecture, Not Upselling</div><p class="diff-body">Body composition, liver function, and current NAD+ deficit all affect the right dose.<br><strong>We select the 100–750mg range based on clinical criteria — not price point.</strong></p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sey">Testimonials</div>
+    <h2>What clients<br><em>report back.</em></h2>
+    <div class="three">
+      <div class="testi"><p class="tq">I came for performance reasons, not wellness. I needed cognitive restoration after four consecutive weeks of 14-hour days. The Reclamation protocol was the right call. I was functional the next morning in a way that genuinely surprised me.</p><div class="ta-name">Marcus K.</div><div class="ta-meta">Singapore</div><div class="ta-prot">Terrain Renew · 500mg</div></div>
+      <div class="testi"><p class="tq">The physician explained exactly what was happening in the IV line and why. That level of transparency is rare. I've done IV therapy in three countries — this was different.</p><div class="ta-name">Sophie L.</div><div class="ta-meta">London</div><div class="ta-prot">Terrain Restore · 250mg</div></div>
+      <div class="testi"><p class="tq">The cold-chain verification Terrain conducts before every session is something I've only seen at actual hospitals. That one detail told me everything I needed to know about how this clinic operates.</p><div class="ta-name">Dr. Rania M.</div><div class="ta-meta">Dubai · Physician</div><div class="ta-prot">Terrain Prime · 750mg</div></div>
+    </div>
+  </section>
+
+  <section class="s-alt">
+    <div class="sey">Coverage</div>
+    <h2>Six zones.<br><em>All of Bali covered.</em></h2>
+    <p class="sub">One standard of care across every zone.</p>
+    <div class="loc-grid">
+      <div class="loc-card" onclick="nav('loc-canggu')"><div class="loc-name">Canggu</div><p class="loc-desc">Highest-demand zone. Continuous coverage across Canggu, Berawa, Pererenan, Batu Bolong.</p><span class="loc-tag">Highest demand</span><div class="loc-arrow">View coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-seminyak')"><div class="loc-name">Seminyak</div><p class="loc-desc">Luxury villa corridor. Oberoi, Petitenget, Laksmana, Kerobokan.</p><span class="loc-tag">Luxury · Pre-departure</span><div class="loc-arrow">View coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-ubud')"><div class="loc-name">Ubud</div><p class="loc-desc">Retreat zone. Post-retreat protocols. Highest Terrain Labs pairing rate.</p><span class="loc-tag">Retreat zone · Labs+IV</span><div class="loc-arrow">View coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-sanur')"><div class="loc-name">Sanur</div><p class="loc-desc">Long-stay expat zone. Highest repeat session rate in our network.</p><span class="loc-tag">Long-stay · Monthly</span><div class="loc-arrow">View coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-nusadua')"><div class="loc-name">Nusa Dua</div><p class="loc-desc">Five-star resort peninsula. Conference and MICE. BTDC compound coverage.</p><span class="loc-tag">Resort · Conference</span><div class="loc-arrow">View coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-uluwatu')"><div class="loc-name">Uluwatu</div><p class="loc-desc">Cliff-top villas, surf recovery, pre-flight protocols. Bukit Peninsula.</p><span class="loc-tag">Pre-flight · Surf</span><div class="loc-arrow">View coverage →</div></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Same-day availability.<br><em>Your villa. Your schedule.</em></h2>
+    <p>No commitment to enquire.
+Your physician confirms the right protocol first.</p>
+    <div class="cta-badges"><span class="cb">Same-day</span><span class="cb">Villa delivery</span><span class="cb">24/7 Bali</span><span class="cb">Physician-led</span></div>
+    <a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+session." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>Book via WhatsApp</a>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Clinic <span>Terrain</span></div>
+        <p class="footer-desc">Clinical-grade NAD+ and IV therapy for cellular renewal, sustained energy, and precision longevity. Villa delivery across all of Bali. Operated under Cepat Sehat Group medical licensing.</p>
+        <div class="footer-phy"><strong>All protocols conducted under direct physician supervision of dr. Cahyadi, General Practitioner, KKI Verified.</strong> Operated under Cepat Sehat Group medical licensing.</div>
+        <p class="footer-disc">This information is for general educational purposes only and does not constitute medical advice. Consult a qualified physician before initiating any treatment.</p>
+      </div>
+      <div>
+        <div class="fcol-title">Protocols</div>
+        <ul class="footer-links">
+          <li><a onclick="nav('protocols')">Terrain Foundation (100mg)</a></li>
+          <li><a onclick="nav('protocols')">Terrain Restore (250mg)</a></li>
+          <li><a onclick="nav('protocols')">Terrain Renew (500mg)</a></li>
+          <li><a onclick="nav('protocols')">Terrain Prime (750mg)</a></li>
+          <li><a onclick="nav('protocols')">Glutathione IV</a></li>
+          <li><a onclick="nav('protocols')">Vitamin C IVC</a></li>
+          <li><a onclick="nav('labs')">Terrain Labs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fcol-title">Locations</div>
+        <ul class="footer-links">
+          <li><a onclick="nav('loc-canggu')">Canggu</a></li>
+          <li><a onclick="nav('loc-seminyak')">Seminyak</a></li>
+          <li><a onclick="nav('loc-ubud')">Ubud</a></li>
+          <li><a onclick="nav('loc-sanur')">Sanur</a></li>
+          <li><a onclick="nav('loc-nusadua')">Nusa Dua</a></li>
+          <li><a onclick="nav('loc-uluwatu')">Uluwatu</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fcol-title">Information</div>
+        <ul class="footer-links">
+          <li><a onclick="nav('science')">The Science</a></li>
+          <li><a onclick="nav('physician')">Our Physician</a></li>
+          <li><a onclick="nav('faq')">FAQ</a></li>
+          <li><a href="https://wa.me/6282395439535" target="_blank">WhatsApp</a></li>
+          <li><a href="https://instagram.com/clinicterrain" target="_blank">Instagram</a></li>
+        </ul>
+        <div style="margin-top:16px;font-size:12px;color:var(--td);">Mon–Sun · 24 Hours<br>Bali, Indonesia<br><a href="tel:+6282395439535" style="color:var(--gd);text-decoration:none;font-family:var(--mono);font-size:11px;">+62 823-9543-9535</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Clinic Terrain. All Rights Reserved. Operated under Cepat Sehat Group.</span>
+      <div class="footer-legal"><a onclick="return false;">Privacy Policy</a><a onclick="return false;">Terms</a><a onclick="nav('physician')">Medical Oversight</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═════════════════════════════════════
+     PROTOCOLS
+════════════════════════════════════════ -->
+<div id="view-protocols" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1920&q=80&fit=crop&auto=format');background-position:center 30%;"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="eyebrow">Clinical Protocols · All Bali</div>
+      <h1>Four NAD+ Doses.<br><em>Every IV Protocol.</em><br>One Clinical Standard.</h1>
+      <p class="hero-desc">Cold-chain verified. Physician-supervised.<br>100mg to 750mg.<br>Plus the full IV stack.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+protocol." target="_blank" class="btn">Book via WhatsApp</a></div>
+    </div>
+  </div>
+  <section>
+    <div class="sey">NAD+ Protocols</div>
+    <h2>The core four.<br><em>Dose-calibrated to your biology.</em></h2>
+    <p class="sub">Your physician decides the dose — not a menu.<br>Based on your G6PD status, liver function, and current depletion level.<br>On that specific day.</p>
+    <div class="four">
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-dose">100 mg</div>
+        <div class="card-name">Terrain Foundation</div>
+        <p class="card-desc">Your first encounter with NAD+ IV therapy. Establishes your individual tolerance curve and baseline cellular response — the data point every subsequent protocol builds from.</p>
+        <div class="card-quote">Clients frequently report a discernible shift in mental clarity between hours two and four. Sleep quality on the first night post-session is consistently the most reliable early signal.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 2.390.000<span>/session</span></div><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+Terrain+Foundation+(100mg)." target="_blank" class="card-link">Book Now →</a></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-dose">250 mg</div>
+        <div class="card-name">Terrain Restore</div>
+        <p class="card-desc">Where cellular deficit becomes visible — in the quality of recovery, the clarity of thinking, the texture of sleep. Moderate depletion. Clear head. Better sleep.
+Most booked protocol in Bali.</p>
+        <div class="card-quote">Clients frequently describe the morning after as a return to a baseline they had forgotten. Cognitive clarity typically leads. Physical energy follows within 24 hours.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 3.390.000<span>/session</span></div><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+Terrain+Restore+(250mg)." target="_blank" class="card-link">Book Now →</a></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-dose">500 mg</div>
+        <div class="card-name">Terrain Renew</div>
+        <p class="card-desc">For those operating with significant cellular debt — chronic stress, sustained high-performance demand, or extensive travel. A systematic mitochondrial intervention, not a temporary stimulation.</p>
+        <div class="card-quote">Clients frequently note that the third day post-session feels categorically different from the first. Physical restoration, mental endurance, and sleep quality shift in concert.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 3.890.000<span>/session</span></div><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+Terrain+Renew+(500mg)." target="_blank" class="card-link">Book Now →</a></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;">
+        <div class="card-dose">750 mg</div>
+        <div class="card-name">Terrain Prime</div>
+        <p class="card-desc">Maximum therapeutic dose. Reserved for clients with established NAD+ therapy history or a clear clinical rationale. Requires physician clearance and a dedicated 4–6 hour villa commitment.</p>
+        <div class="card-quote">Clients who complete The Sovereign frequently report a 2–3 week sustained elevation in baseline function — not a peak followed by regression, but a new floor held over weeks.</div>
+        <div class="card-foot"><div class="card-foot-price">Rp 4.390.000<span>/session</span></div><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+Terrain+Prime+(750mg)." target="_blank" class="card-link">Book Now →</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="s-alt">
+    <div class="sey">Additional IV Protocols</div>
+    <h2>The full CSG<br><em>IV stack.</em></h2>
+    <p class="sub">Beyond NAD+, Clinic Terrain administers the full Cepat Sehat Group IV protocol stack — each compound physician-verified, cold-chain maintained, and dosed to your clinical picture.</p>
+    <div class="auto">
+      <div class="card"><div class="card-dose">Antioxidant</div><div class="card-name">Glutathione IV</div><p class="card-desc">High-dose reduced glutathione for systemic detoxification, skin brightening, and oxidative stress reduction. Frequently combined with Vitamin C IVC.</p><div class="card-price">From Rp 1.200.000</div></div>
+      <div class="card"><div class="card-dose">Immune · Antioxidant</div><div class="card-name">Vitamin C IVC</div><p class="card-desc">High-dose intravenous Vitamin C. Bypasses intestinal absorption limits. Indicated for immune support, post-viral recovery, and as a redox adjuvant to NAD+ therapy.</p><div class="card-price">From Rp 850.000</div></div>
+      <div class="card"><div class="card-dose">Foundational</div><div class="card-name">Myers Cocktail</div><p class="card-desc">The clinical standard for IV micronutrient repletion. Magnesium, B-complex, B12, and Vitamin C. Indicated for fatigue, jet lag, and general depletion.</p><div class="card-price">From Rp 750.000</div></div>
+      <div class="card"><div class="card-dose">Recovery</div><div class="card-name">Hydration IV</div><p class="card-desc">Isotonic saline + electrolyte repletion. Rapid recovery from dehydration, Bali Belly, alcohol, or tropical heat. Most requested acute intervention.</p><div class="card-price">From Rp 450.000</div></div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your protocol.</h2><p>Tell us your location and objective. Your physician will confirm the right protocol before your session.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+protocol." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>Book via WhatsApp</a></div>
+</div>
+
+<!-- ═════════════════════════════════════
+     LAB TESTING
+════════════════════════════════════════ -->
+<div id="view-labs" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&q=80&fit=crop&auto=format');"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="eyebrow">Terrain Labs · Diagnostic Division</div>
+      <h1>Know your terrain<br><em>before you treat it.</em></h1>
+      <p class="hero-desc">Most IV services here have no idea what's in your blood.<br>We find out first.<br>Then we treat.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+Terrain+Labs+draw." target="_blank" class="btn">Book Lab Draw</a></div>
+    </div>
+  </div>
+  <section>
+    <div class="two">
+      <div>
+        <div class="sey">Functional Diagnostics · Bali</div>
+        <h2>Precision blood analysis.<br><em>Your villa. Same day.</em></h2>
+        <p class="b">Most IV services here have no idea what's in your blood.<br>We find out first.<br>Then we treat. Understand your NAD+ status, hormonal baseline, inflammatory load, and metabolic picture before committing to a protocol stack.</p>
+        <p class="b">Draw at your villa.
+Results from certified labs.
+Physician explains every number.</p>
+        <p class="b"><strong>The sequence:</strong> Draw → Interpret → Confirm → Infuse.<br>Day one to day two.<br>Clinical medicine. Not guesswork.</p>
+        <div class="terrain-badge"><span>⬡</span> Terrain Labs · A Cepat Sehat Group Diagnostic Division</div>
+        <div class="labs-panel"><div><div class="lp-name">SCREEN Panel</div><div class="lp-desc">CBC · CMP · HbA1c · hsCRP · VitD · B12 · Ferritin. Entry-level terrain assessment.</div></div><div class="lp-price">Rp 990.000</div></div>
+        <div class="labs-panel"><div><div class="lp-name">METABOLIC Panel</div><div class="lp-desc">Full lipid + ApoB + Lp(a) + fasting insulin + HOMA-IR + thyroid (TSH / FT3 / FT4 / rT3).</div></div><div class="lp-price">Rp 1.850.000</div></div>
+        <div class="labs-panel"><div><div class="lp-name">HORMONE Panel</div><div class="lp-desc">Total + Free Testosterone · SHBG · E2 · DHEA-S · LH/FSH · Prolactin · Cortisol (AM).</div></div><div class="lp-price">Rp 2.200.000</div></div>
+        <div class="labs-panel"><div><div class="lp-name">COMPLETE Panel</div><div class="lp-desc">Full terrain map: metabolic + hormonal + inflammatory + micronutrient + organ function. Physician dossier included.</div></div><div class="lp-price">Rp 4.750.000</div></div>
+      </div>
+      <div>
+        <div class="photo photo-t" style="margin-bottom:12px;">
+          <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=900&q=80&fit=crop&auto=format" alt="Blood analysis laboratory — Terrain Labs Bali functional diagnostics" loading="lazy">
+        </div>
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:22px 24px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;">Why labs before IV?</div>
+          <p style="font-size:13px;color:var(--td);line-height:1.75;">Administering IV therapy without baseline biomarkers is like navigating without coordinates. Your G6PD status affects IVC safety. Your ferritin level determines whether iron supplementation is indicated. Your cortisol profile shapes your NAD+ dose timing. Labs are not optional for serious terrain medicine — they are the foundation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your lab draw.</h2><p>Villa collection, certified analysis, physician interpretation. Available across all Bali zones.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'd+like+to+book+a+Terrain+Labs+panel." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>Book Lab Draw</a></div>
+</div>
+
+<!-- ═════════════════════════════════════
+     SCIENCE
+════════════════════════════════════════ -->
+<div id="view-science" class="view">
+  <section style="padding-top:88px;">
+    <div class="sey">The Science</div>
+    <h2>Understanding the<br><em>Cellular Terrain</em></h2>
+    <div class="two">
+      <div>
+        <p class="b">NAD+ is the primary electron carrier in cellular energy production — involved in 500+ enzymatic reactions.<br>It activates sirtuins (longevity proteins) and fuels PARP-mediated DNA repair.<br>Tissue levels fall approximately 50% between early adulthood and age 60 (Verdin, Science 2015).</p>
+        <p class="b">Measurably slower tissue repair, decreased mitochondrial output, accelerated biological aging markers.<br>These are the documented correlates of NAD+ depletion (Yoshino et al., Cell Metabolism 2021).<br><em>People experience this as "getting older."</em></p>
+        <p class="b">Oral NMN bioavailability: estimated 5–25% depending on formulation and hepatic conversion efficiency.<br>IV NAD+: >95% bioavailability — bypasses intestinal absorption and first-pass liver metabolism entirely.<br><strong>Compound reaches target tissues directly, within minutes of infusion.</strong></p>
+        <div class="cite-links">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34099519/" target="_blank" class="cite">↗ Yoshino et al. — Cell Metabolism, 2021</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23870130/" target="_blank" class="cite">↗ Mouchiroud et al. — Cell, 2013</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26785481/" target="_blank" class="cite">↗ Verdin — Science, 2015</a>
+        </div>
+      </div>
+      <div>
+        <div class="chart">
+          <div class="chart-title">Bioavailability by delivery method</div>
+          <div class="bar-row"><span class="bar-label">IV (Intravenous)</span><div class="bar-track"><div class="bar-fill" style="width:97%"></div></div><span class="bar-pct">&gt;95%</span></div>
+          <div class="bar-row"><span class="bar-label">NR (Oral)</span><div class="bar-track"><div class="bar-fill dim" style="width:25%"></div></div><span class="bar-pct dim">~25%</span></div>
+          <div class="bar-row"><span class="bar-label">NMN (Oral)</span><div class="bar-track"><div class="bar-fill dim" style="width:15%"></div></div><span class="bar-pct dim">~15%</span></div>
+          <div class="bar-row" style="margin-bottom:0"><span class="bar-label">Niacin (Oral)</span><div class="bar-track"><div class="bar-fill dim" style="width:5%"></div></div><span class="bar-pct dim">~5%</span></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:12px;">
+          <div style="background:var(--bg2);padding:18px;text-align:center;"><div style="font-family:var(--serif);font-size:34px;font-weight:300;color:var(--gl);line-height:1;margin-bottom:6px;">~50%</div><div style="font-size:11px;color:var(--td);">NAD+ decline ages 40–60</div></div>
+          <div style="background:var(--bg2);padding:18px;text-align:center;"><div style="font-family:var(--serif);font-size:34px;font-weight:300;color:var(--gl);line-height:1;margin-bottom:6px;">500+</div><div style="font-size:11px;color:var(--td);">Enzymatic reactions involved</div></div>
+          <div style="background:var(--bg2);padding:18px;text-align:center;"><div style="font-family:var(--mono);font-size:22px;font-weight:400;color:var(--gl);line-height:1;margin-bottom:6px;">PARP</div><div style="font-size:11px;color:var(--td);">DNA repair enzyme substrate</div></div>
+          <div style="background:var(--bg2);padding:18px;text-align:center;"><div style="font-family:var(--mono);font-size:22px;font-weight:400;color:var(--gl);line-height:1;margin-bottom:6px;">SIRT</div><div style="font-size:11px;color:var(--td);">Longevity pathway activator</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════════════════════════════════════
+     PHYSICIAN
+════════════════════════════════════════ -->
+<div id="view-physician" class="view">
+  <section style="padding-top:88px;">
+    <div class="sey">Clinical Oversight</div>
+    <h2>Our <em>Medical Team</em></h2>
+    <p class="sub" style="margin-bottom:48px;">Every Clinic Terrain session is conducted under direct physician supervision. 7 licensed doctors. 13 registered nurses. All operating under Cepat Sehat Group — Reg. No. 04102100035090001.</p>
+
+    <!-- DOCTORS -->
+    <div style="margin-bottom:52px;">
+      <h3 style="font-family:var(--serif);font-size:clamp(24px,3vw,38px);font-weight:300;color:var(--ivory);margin-bottom:32px;">Our <em>Doctors</em></h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+
+        <!-- dr. Cahyadi Surya -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid rgba(201,168,76,.3);margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:28px;color:var(--border2);">✦</div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Cahyadi Surya, MPH</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">General Practitioner</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: 3411100223193150</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+          <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);padding:4px 10px;border-radius:2px;font-family:var(--mono);font-size:10px;color:var(--gd);margin-top:10px;">✓ KKI Verified</div>
+        </div>
+
+        <!-- dr. Ayu A. Istiana -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-ayu-fix.webp&w=256&q=75" alt="dr. Ayu A. Istiana" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Ayu A. Istiana, Sp.KP</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">Aviation Medicine Specialist</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: 3121100220145699</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+        </div>
+
+        <!-- dr. Ernita Rosyanti Dewi -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-ernita-r.webp&w=256&q=75" alt="dr. Ernita Rosyanti Dewi" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Ernita Rosyanti Dewi</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">General Practitioner</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: 3121100220145544</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+        </div>
+
+        <!-- dr. Irvan Rizki Fitri -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-irvan-r.webp&w=256&q=75" alt="dr. Irvan Rizki Fitri" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Irvan Rizki Fitri</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">General Practitioner</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: 3111100321119174</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+        </div>
+
+        <!-- dr. Dwi Suryaning Ayu -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-dwi-s.webp&w=256&q=75" alt="dr. Dwi Suryaning Ayu Aprilizia" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Dwi Suryaning Ayu Aprilizia, Sp.A, M.H</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">Pediatrician</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: 3321201323154360</div>
+          <div style="font-size:12px;color:var(--td);">Aysha Islamic Hospital</div>
+        </div>
+
+        <!-- dr. Adrian Prasetio -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-adrian.webp&w=256&q=75" alt="dr. Adrian Prasetio" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Adrian Prasetio</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">Psychiatrist</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: MR51712503008056</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+        </div>
+
+        <!-- dr. Ida Bagus Ngurah -->
+        <div style="background:var(--bg2);padding:28px 24px;transition:background .2s;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;background:var(--bg4);border:2px solid var(--border);margin-bottom:16px;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fdoctor%2Fdr-yana.webp&w=256&q=75" alt="dr. Ida Bagus Ngurah Dwipayana Manuaba" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="font-family:var(--serif);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px;">dr. Ida Bagus Ngurah Dwipayana Manuaba</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px;">Psychiatrist</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);margin-bottom:4px;">STR: MR51712502005547</div>
+          <div style="font-size:12px;color:var(--td);">Cepat Sehat Clinic</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NURSES -->
+    <div style="margin-bottom:52px;">
+      <h3 style="font-family:var(--serif);font-size:clamp(24px,3vw,38px);font-weight:300;color:var(--ivory);margin-bottom:32px;">Our <em>Nurses</em></h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-siti.webp&w=256&q=75" alt="Siti Rahma Derlauw" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Siti Rahma Derlauw</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 3101522234737239</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-loisa.webp&w=256&q=75" alt="Loisa Lakamai" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Loisa Lakamai</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 1701721213519681</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-syarah.webp&w=256&q=75" alt="Syarah Azzarah" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Syarah Azzarah</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 2601521224246624</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-marsiani.webp&w=256&q=75" alt="Marsiani Talo" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Marsiani Talo</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 190172122-4444051</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-selamat.png&w=256&q=75" alt="Selamat Hartanto" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Selamat Hartanto</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: TJ00000324384379</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-sumarna.png&w=256&q=75" alt="Sumarna" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Sumarna</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: UG00000370743415</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F9%20-%20I%20Nyoman%20Aryana%20Saputra%20Wiguna.png&w=256&q=75" alt="I Nyoman Aryana Saputra Wiguna" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">I Nyoman Aryana Saputra Wiguna</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 170171122-4395317</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F11.%20Nadia-Ayu-Fitri-Hamidah.png&w=256&q=75" alt="Nadia Ayu Fitri Hamida" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Nadia Ayu Fitri Hamida</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: QA00000917236835</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F12.%20Bagus-Chandra-Krisna.png&w=256&q=75" alt="Gusti Ngurah Bagus Candra Krisna" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Gusti Ngurah Bagus Candra Krisna</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 170171121-3480223</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F14.%20Putu-Diana-Purnama-Dewi.png&w=256&q=75" alt="Putu Diana Purnama Dewi" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Putu Diana Purnama Dewi</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: VJ00000994225180</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F15.%20Sri-Andayani.png&w=256&q=75" alt="Ni Putu Sri Andayani" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Ni Putu Sri Andayani</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: 170172121-3447418</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2F18.%20Chintya-Regina-Asak.png&w=256&q=75" alt="Ni Putu Chintya Regina Asak" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Ni Putu Chintya Regina Asak</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: GC00000804474712</div>
+        </div>
+        <div style="background:var(--bg2);padding:20px 18px;transition:background .2s;text-align:center;" onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background='var(--bg2)'">
+          <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--bg4);border:1px solid var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;">
+            <img src="https://www.infusionbali.com/_next/image?url=%2Fimages%2Fnurses%2Fnurse-intan.png&w=256&q=75" alt="Fitri Nur Intan" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px;color:var(--border2)\'>✦</span>'">
+          </div>
+          <div style="font-size:13px;font-weight:500;color:var(--ivory);margin-bottom:4px;line-height:1.3;">Fitri Nur Intan</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--gd);">STR: OR00000263426298</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      <strong>Medical Disclaimer.</strong> All protocols administered by Clinic Terrain are conducted under direct physician supervision within the Cepat Sehat Group medical licensing framework (Reg. No. 04102100035090001). Individual results vary. Consult a qualified physician before initiating any treatment protocol. All physicians and nurses listed hold valid STR (Surat Tanda Registrasi) issued by the Indonesian Medical Council (KKI).
+    </div>
+  </section>
+</div>
+
+
+<!-- ═════════════════════════════════════
+     LOCATIONS INDEX
+════════════════════════════════════════ -->
+<div id="view-locations" class="view">
+  <section style="padding-top:88px;">
+    <div class="sey">Coverage · All of Bali</div>
+    <h2>We come to you.<br><em>Wherever you are.</em></h2>
+    <p class="sub">Six zones. One standard.</p>
+    <div class="loc-grid">
+      <div class="loc-card" onclick="nav('loc-canggu')"><div class="loc-name">Canggu</div><p class="loc-desc">Highest demand. Fastest response.
+Canggu, Berawa, Pererenan — covered.</p><span class="loc-tag">Highest demand · Fast response</span><div class="loc-arrow">View full coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-seminyak')"><div class="loc-name">Seminyak</div><p class="loc-desc">Luxury corridor.
+Discrete. Coordinated. Clinical.</p><span class="loc-tag">Luxury · Pre-departure</span><div class="loc-arrow">View full coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-ubud')"><div class="loc-name">Ubud</div><p class="loc-desc">Retreat zone.
+Post-retreat protocols.
+Labs + IV combined.</p><span class="loc-tag">Retreat zone · Labs+IV</span><div class="loc-arrow">View full coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-sanur')"><div class="loc-name">Sanur</div><p class="loc-desc">Long-stay expat zone.
+Highest repeat rate in our network.</p><span class="loc-tag">Long-stay · Monthly protocols</span><div class="loc-arrow">View full coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-nusadua')"><div class="loc-name">Nusa Dua</div><p class="loc-desc">Five-star peninsula.
+Conference and resort delivery.</p><span class="loc-tag">Resort · Five-star</span><div class="loc-arrow">View full coverage →</div></div>
+      <div class="loc-card" onclick="nav('loc-uluwatu')"><div class="loc-name">Uluwatu</div><p class="loc-desc">Cliff-top villas. Surf recovery.
+Pre-flight protocols. Bukit Peninsula.</p><span class="loc-tag">Pre-flight · Surf recovery</span><div class="loc-arrow">View full coverage →</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═════════════════════════════════════
+     LOCATION: CANGGU
+════════════════════════════════════════ -->
+<div id="view-loc-canggu" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80&fit=crop&auto=format');"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Canggu</div>
+      <div class="eyebrow">Villa Delivery · Canggu · 24/7</div>
+      <h1>NAD+ Therapy<br><em>Canggu</em> —<br>Physician-Led,<br>Villa Delivered.</h1>
+      <p class="hero-desc">Canggu, Berawa, Pererenan, Batu Bolong.<br>Physician at your villa.<br>Cold-chain verified. 24/7.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Canggu+and+want+to+book." target="_blank" class="btn">Book in Canggu</a><button class="btn btn-ghost" onclick="nav('protocols')">View Protocols</button></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Canggu</div><div class="qf-s">Berawa · Pererenan · Batu Bolong · Echo Beach</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Monday through Sunday, continuous</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 4h</div><div class="qf-s">Booking to physician arrival, typical</div></div>
+    <div class="qf"><div class="qf-l">Network volume</div><div class="qf-v">Highest</div><div class="qf-s">Most active zone in our Bali network</div></div>
+  </div>
+  <section>
+    <div class="two">
+      <div>
+        <div class="sey">NAD+ Therapy in Canggu</div>
+        <h2>Bali's most active<br>wellness zone — <em>served clinically.</em></h2>
+        <p class="b">Canggu has every wellness format — juice bars, gyms, biohacking studios.<br>Clinical-grade IV therapy, physician-supervised, was missing.<br><strong>Most services here: nurse, fixed menu, no cold-chain documentation.</strong><br>Clinic Terrain fills that gap.</p>
+        <p class="b">Physician arrives at your villa.<br>Compound verified. Assessment done. IV set.<br><em>Not a nurse with a menu.<br>A clinical session. At your villa.</em></p>
+        <p class="b"><strong>Frequent service areas:</strong> Jl. Batu Bolong · Batu Mejan · Echo Beach · Berawa villa belt · Pererenan · Jl. Nelayan · Umalas · Tibubeneng · Brawa · Finns vicinity · Old Man's area · Canggu Club precinct.</p>
+        <div class="local-grid">
+          <div class="local"><div class="local-icon">🏄</div><div class="local-title">Surf Recovery</div><div class="local-body">Post-session at Echo Beach or Old Man's. Muscle recovery + NAD+ for mitochondrial reload.</div></div>
+          <div class="local"><div class="local-icon">💻</div><div class="local-title">Remote Worker Reset</div><div class="local-body">Cognitive clarity restoration for founders operating across multiple time zones from Canggu.</div></div>
+          <div class="local"><div class="local-icon">🧘</div><div class="local-title">Retreat Completion</div><div class="local-body">Post-retreat cellular support after yoga or fasting programmes in the Canggu area.</div></div>
+          <div class="local"><div class="local-icon">✈️</div><div class="local-title">Arrival Recovery</div><div class="local-body">Long-haul arrival protocol. Jetlag + immune support. Bookable same-day from Ngurah Rai.</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1668854085665-0eed599e8078?w=900&q=85&fit=crop&auto=format" alt="Tropical villa pool Canggu Bali — Clinic Terrain NAD+ therapy" loading="lazy"></div>
+        <div class="photo photo-m"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&q=80&fit=crop&auto=format" alt="Bali tropical landscape" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  <section class="s-alt">
+    <div class="sey">FAQ · Canggu</div>
+    <h2 style="margin-bottom:28px;">Canggu-specific <em>questions.</em></h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">Do you cover all of Canggu, including Berawa and Pererenan?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Yes. Our Canggu zone covers the full corridor from Batu Bolong through Berawa to Pererenan and Tibubeneng. We also cover Umalas and Brawa. If uncertain, message us via WhatsApp with your location — we confirm within minutes.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">How quickly can a physician reach my villa?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Canggu is our highest-activity zone with dedicated local coverage. Typical booking-to-arrival is 1–3 hours depending on traffic and current session load. Same-day availability is standard.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">Can I combine NAD+ therapy with a surf session the same day?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">We recommend NAD+ therapy on a recovery day or at the end of a training day — not before strenuous activity. The infusion requires 2–5 hours seated. Post-session clients typically feel lucid, but strenuous physical output immediately post-infusion is not recommended.</div></div></div>
+    </div>
+    <div style="margin-top:28px;"><div class="sey">Other Locations</div><div class="nearby"><a onclick="nav('loc-seminyak')">→ Seminyak</a><a onclick="nav('loc-ubud')">→ Ubud</a><a onclick="nav('loc-sanur')">→ Sanur</a><a onclick="nav('loc-uluwatu')">→ Uluwatu</a></div></div>
+  </section>
+  <div class="cta"><h2>Book your Canggu session.</h2><p>Same-day availability. Your villa. Physician-led start to finish.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Canggu+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Canggu</a></div>
+</div>
+
+<!-- ═══ LOCATION: SEMINYAK ═══ -->
+<div id="view-loc-seminyak" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80&fit=crop&auto=format');"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Seminyak</div>
+      <div class="eyebrow">Luxury Villa Delivery · Seminyak</div>
+      <h1>NAD+ Therapy<br><em>Seminyak</em> —<br>Luxury Standard,<br>Clinical Precision.</h1>
+      <p class="hero-desc">Seminyak's villa compounds and resort properties serviced with physician-led, cold-chain verified NAD+ protocols. Oberoi, Petitenget, Laksmana — discrete physician arrival, concierge coordination.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Seminyak+and+want+to+book." target="_blank" class="btn">Book in Seminyak</a></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Seminyak</div><div class="qf-s">Petitenget · Oberoi · Laksmana · Kerobokan</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Including pre-departure and evening sessions</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 4h</div><div class="qf-s">Booking to physician arrival, typical</div></div>
+    <div class="qf"><div class="qf-l">Coordination</div><div class="qf-v">Discrete</div><div class="qf-s">Villa staff and concierge familiar</div></div>
+  </div>
+  <section>
+    <div class="two-r">
+      <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1439130490301-25e322d88054?w=900&q=80&fit=crop&auto=format" alt="Luxury villa Seminyak Bali pool — Clinic Terrain NAD+ IV therapy" loading="lazy"></div>
+      <div>
+        <div class="sey">NAD+ Therapy in Seminyak</div>
+        <h2>Bali's luxury<br>corridor — <em>served properly.</em></h2>
+        <p class="b">Seminyak villa compounds operate to five-star hospitality standards.<br>We arrive, conduct a physician assessment, administer the protocol, and depart without disrupting your stay.<br><strong>Coordinated with your concierge team on request.</strong></p>
+        <p class="b">Flying out tomorrow? We come today.<br>Just arrived? We come now.<br>Oberoi, Petitenget, Laksmana, Kerobokan — covered.</p>
+        <div class="nearby" style="margin-top:20px;"><a onclick="nav('loc-canggu')">→ Canggu</a><a onclick="nav('loc-nusadua')">→ Nusa Dua</a><a onclick="nav('loc-uluwatu')">→ Uluwatu</a></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your Seminyak session.</h2><p>Discrete physician arrival. Concierge coordination. Same-day availability.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Seminyak+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Seminyak</a></div>
+</div>
+
+<!-- ═══ LOCATION: UBUD ═══ -->
+<div id="view-loc-ubud" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1920&q=80&fit=crop&auto=format');background-position:center 40%;"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Ubud</div>
+      <div class="eyebrow">Retreat & Villa Delivery · Ubud</div>
+      <h1>NAD+ Therapy<br><em>Ubud</em> —<br>Clinical Depth for<br>the Retreat Zone.</h1>
+      <p class="hero-desc">Ubud's wellness community is the most discerning in Bali. Our physician-supervised NAD+ protocols are the clinical layer that completes what yoga, breathwork, and fasting begin.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Ubud+and+want+to+book." target="_blank" class="btn">Book in Ubud</a><button class="btn btn-ghost" onclick="nav('labs')">Terrain Labs →</button></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Ubud</div><div class="qf-s">Penestanan · Sanggingan · Campuhan · Tegallalang</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Including early morning post-retreat sessions</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 5h</div><div class="qf-s">Slightly longer due to Ubud road conditions</div></div>
+    <div class="qf"><div class="qf-l">Specialty</div><div class="qf-v">Labs+IV</div><div class="qf-s">Highest Terrain Labs diagnostic pairing rate</div></div>
+  </div>
+  <section>
+    <div class="two">
+      <div>
+        <div class="sey">NAD+ Therapy in Ubud</div>
+        <h2>Where wellness<br>becomes <em>clinical.</em></h2>
+        <p class="b">Five-day silent retreat, supplement stack, yoga intensive — and still not fully recovered?<br>That's typically a measurable deficit: NAD+, ferritin, cortisol, or B12.<br><strong>Terrain Labs panel identifies which. Then we build the protocol.</strong></p>
+        <p class="b">Extended fasting and intensive breathwork protocols significantly increase cellular NAD+ utilisation.<br>A 5-day retreat depletes what months of supplementation built.<br><em>Terrain Renew (500mg) the day after is the clinical recovery sequence.</em></p>
+        <p class="b">Coverage includes Ubud town core, Penestanan, Sanggingan, Campuhan, Tegallalang, Payogan, and retreat properties across the Ubud highlands.</p>
+        <div class="nearby" style="margin-top:20px;"><a onclick="nav('loc-canggu')">→ Canggu</a><a onclick="nav('loc-sanur')">→ Sanur</a></div>
+      </div>
+      <div>
+        <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1668854085665-0eed599e8078?w=900&q=85&fit=crop&auto=format" alt="Tropical villa pool Ubud Bali — Clinic Terrain NAD+ retreat delivery" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your Ubud session.</h2><p>Labs + protocol sequence available. Villa delivery across the Ubud retreat zone.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Ubud+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Ubud</a></div>
+</div>
+
+<!-- ═══ LOCATION: SANUR ═══ -->
+<div id="view-loc-sanur" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=80&fit=crop&auto=format');background-position:center 70%;"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Sanur</div>
+      <div class="eyebrow">Long-Stay Delivery · Sanur</div>
+      <h1>NAD+ Therapy<br><em>Sanur</em> —<br>Long-Stay Clinical<br>Continuity.</h1>
+      <p class="hero-desc">Sanur's expat community and long-stay medical travellers have the highest repeat session rate in our network. Monthly protocols, diagnostic follow-ups, and ongoing cellular maintenance.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Sanur+and+want+to+book." target="_blank" class="btn">Book in Sanur</a></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Sanur</div><div class="qf-s">Beach road · Sindhu · Intaran · Mertasari · Renon</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Monday through Sunday</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 4h</div><div class="qf-s">Booking to physician arrival</div></div>
+    <div class="qf"><div class="qf-l">Client profile</div><div class="qf-v">Repeat</div><div class="qf-s">Highest protocol continuity rate of all zones</div></div>
+  </div>
+  <section>
+    <div class="two-r">
+      <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=900&q=80&fit=crop&auto=format" alt="Bali beach calm water Sanur — Clinic Terrain NAD+ long-stay protocols" loading="lazy"></div>
+      <div>
+        <div class="sey">NAD+ Therapy in Sanur</div>
+        <h2>Bali's long-stay zone —<br><em>served continuously.</em></h2>
+        <p class="b">Sanur clients average 4–6 sessions per year — higher than any other zone.<br>Monthly 250mg Terrain Restore is the most common standing protocol.<br>Tracked across Terrain Labs retest panels.</p>
+        <p class="b"><strong>Highest repeat rate of all zones.</strong><br>Beach road, Sindhu, Intaran, Mertasari, Renon — covered.</p>
+        <div class="nearby" style="margin-top:20px;"><a onclick="nav('loc-ubud')">→ Ubud</a><a onclick="nav('loc-canggu')">→ Canggu</a><a onclick="nav('loc-nusadua')">→ Nusa Dua</a></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your Sanur session.</h2><p>Monthly scheduling available. Ongoing protocol management on request.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Sanur+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Sanur</a></div>
+</div>
+
+<!-- ═══ LOCATION: NUSA DUA ═══ -->
+<div id="view-loc-nusadua" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80&fit=crop&auto=format');"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Nusa Dua</div>
+      <div class="eyebrow">Five-Star Resort Delivery · Nusa Dua</div>
+      <h1>NAD+ Therapy<br><em>Nusa Dua</em> —<br>Resort-Grade,<br>Clinical Precision.</h1>
+      <p class="hero-desc">The Nusa Dua peninsula's five-star resort properties serviced with physician-led NAD+ IV therapy. Direct villa delivery, concierge coordination, pharmaceutical-grade compounds.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Nusa+Dua+and+want+to+book." target="_blank" class="btn">Book in Nusa Dua</a></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Nusa Dua</div><div class="qf-s">BTDC compound · Tanjung Benoa · Jimbaran</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Including pre-conference early morning</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 5h</div><div class="qf-s">Peninsula access dependent</div></div>
+    <div class="qf"><div class="qf-l">Coordination</div><div class="qf-v">Resort</div><div class="qf-s">Concierge and villa staff familiar</div></div>
+  </div>
+  <section>
+    <div class="two">
+      <div>
+        <div class="sey">NAD+ Therapy in Nusa Dua</div>
+        <h2>The resort peninsula —<br><em>served without compromise.</em></h2>
+        <p class="b">BTDC resort medical teams handle acute emergencies — not NAD+ IV therapy.<br><strong>Clinic Terrain delivers pharmaceutical-grade protocols to your villa or suite.</strong><br>Physician-led. Cold-chain verified. Concierge-coordinated.</p>
+        <p class="b">Consecutive high-cognitive-demand days measurably reduce NAD+ availability.<br><em>A mid-conference Terrain Restore 250mg session typically restores functional baseline within 24 hours.</em></p>
+        <div class="nearby" style="margin-top:20px;"><a onclick="nav('loc-seminyak')">→ Seminyak</a><a onclick="nav('loc-uluwatu')">→ Uluwatu</a></div>
+      </div>
+      <div>
+        <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80&fit=crop&auto=format" alt="Five-star resort Nusa Dua Bali — Clinic Terrain NAD+ IV therapy delivery" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your Nusa Dua session.</h2><p>Resort concierge coordination. Physician arrival at your villa or suite.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Nusa+Dua+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Nusa Dua</a></div>
+</div>
+
+<!-- ═══ LOCATION: ULUWATU ═══ -->
+<div id="view-loc-uluwatu" class="view">
+  <div class="hero">
+    <div class="hbg" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?w=1920&q=80&fit=crop&auto=format');background-position:center 60%;"></div>
+    <div class="hov"></div>
+    <div class="hc">
+      <div class="bc"><a onclick="nav('home')">Clinic Terrain</a> <span>›</span> <a onclick="nav('locations')">Locations</a> <span>›</span> Uluwatu</div>
+      <div class="eyebrow">Cliff Villa Delivery · Uluwatu · Bukit</div>
+      <h1>NAD+ Therapy<br><em>Uluwatu</em> —<br>Pre-Flight. Post-Surf.<br>Properly Dosed.</h1>
+      <p class="hero-desc">Uluwatu's cliff-top villas and surf camps serviced with physician-led NAD+ IV therapy. Pre-departure cellular optimisation, surf recovery, longevity protocols — Bukit Peninsula delivery.</p>
+      <div class="actions"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Uluwatu+and+want+to+book." target="_blank" class="btn">Book in Uluwatu</a></div>
+    </div>
+  </div>
+  <div class="qf-strip">
+    <div class="qf"><div class="qf-l">Coverage</div><div class="qf-v">Uluwatu</div><div class="qf-s">Pecatu · Bingin · Padang Padang · Balangan</div></div>
+    <div class="qf"><div class="qf-l">Availability</div><div class="qf-v">24 / 7</div><div class="qf-s">Including pre-dawn pre-flight sessions</div></div>
+    <div class="qf"><div class="qf-l">Response time</div><div class="qf-v">&lt; 5h</div><div class="qf-s">Bukit road access adds transit time</div></div>
+    <div class="qf"><div class="qf-l">Top use case</div><div class="qf-v">Pre-flight</div><div class="qf-s">Most common booking: day before departure</div></div>
+  </div>
+  <section>
+    <div class="two">
+      <div>
+        <div class="sey">NAD+ Therapy in Uluwatu</div>
+        <h2>The Bukit Peninsula —<br><em>the last session before you leave.</em></h2>
+        <p class="b"><strong>Day before your flight: </strong>Terrain Restore 250mg at your villa. Infusion time: 2.5–3 hours. Board rested. Land functional.</p>
+        <p class="b">Extended surf session at Uluwatu reef drives significant oxidative stress and muscular demand.<br>Glutathione 600mg + NAD+ 250mg that evening addresses both vectors.<br><em>Recovery measurable by the following morning.</em></p>
+        <p class="b">Pecatu, Bingin, Padang Padang, Balangan, Dreamland.<br>Full Bukit cliff road covered.</p>
+        <div class="nearby" style="margin-top:20px;"><a onclick="nav('loc-seminyak')">→ Seminyak</a><a onclick="nav('loc-nusadua')">→ Nusa Dua</a><a onclick="nav('loc-canggu')">→ Canggu</a></div>
+      </div>
+      <div>
+        <div class="photo photo-t"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=900&q=80&fit=crop&auto=format" alt="Bali cliff ocean Uluwatu — Clinic Terrain NAD+ therapy Bukit Peninsula" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta"><h2>Book your Uluwatu session.</h2><p>Pre-flight, post-surf, or longevity — same clinical standard at the tip of the Bukit.</p><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I'm+in+Uluwatu+and+want+to+book." target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.857L.057 24l6.305-1.654A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.374l-.36-.213-3.733.979 1.001-3.647-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>WhatsApp · Uluwatu</a></div>
+</div>
+
+<!-- ═════════════════════════════════════
+     FAQ
+════════════════════════════════════════ -->
+<div id="view-faq" class="view">
+  <section style="padding-top:88px;">
+    <div class="sey">FAQ</div>
+    <h2>Questions worth<br><em>answering properly.</em></h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">How is Clinic Terrain different from other IV drip services in Bali?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Three things. Physician assessment before every session. Cold-chain verification on arrival. Dose based on your biology, not a menu. Most Bali IV services: nurse, fixed menu, no cold-chain. We are a clinic that comes to your villa.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">What should I expect during the session itself?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Physician arrives. Assesses. Verifies compound. Sets IV. Infusion runs slowly — rushed NAD+ causes flushing. Terrain's pace avoids this. Clients work or rest through it without noticing.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">Can I do NAD+ therapy if I take regular medications?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Possibly, but this requires physician review. Several medications interact with NAD+ metabolism pathways. Your pre-session assessment covers current medications. If a contraindication exists, your physician will discuss alternatives before the IV line is set.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">I'm only in Bali for three days. Which protocol is right for me?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">100mg (2–3h infusion) or 250mg (2.5–3.5h infusion) — both work within a 3-day stay. Effects are typically noticeable within 24h. The 500mg and 750mg protocols require 4–6h and a longer recovery window — better suited to stays of 5 days or more.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">Does the session need to take place at a clinic?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">No clinic visit required. We bring sterile IV supplies, monitoring devices, and cold-chain-verified compound to your villa, hotel, or resort. You need a comfortable chair and the infusion time — 2 to 6 hours depending on dose.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">How soon will I feel the effects?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">100mg Terrain Foundation: noticeable shift in cognitive clarity typically within 2–4 hours. 500mg Terrain Renew: full effect builds over 48–72 hours. Across all protocols, sleep quality on the first night post-session is the most reliable early indicator.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">Can I combine NAD+ therapy with other Clinic Terrain protocols?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Yes. NAD+ + Glutathione is our most common combination. Your physician decides the stack based on your labs — not a default menu.</div></div></div>
+      <div class="faq-item"><button class="faq-btn" onclick="faq(this)"><span class="fq">What is Terrain Labs and how does it work?</span><span class="fa">+</span></button><div class="fan"><div class="fan-inner">Blood draw at your villa. Certified lab analysis. Physician interprets every number. Then we build your protocol. Draw today. Infusion tomorrow.</div></div></div>
+    </div>
+    <div style="margin-top:48px;text-align:center;"><a href="https://wa.me/6282395439535?text=Hi+Clinic+Terrain.+I+have+a+question." target="_blank" class="btn">Ask a Question via WhatsApp</a></div>
+  </section>
+</div>
+
+<script>
+// URL map — each section gets a readable hash
+const URL_MAP = {
+  'home': '/',
+  'protocols': '#protocols',
+  'labs': '#lab-testing',
+  'science': '#science',
+  'physician': '#our-physician',
+  'locations': '#locations',
+  'faq': '#faq',
+  'loc-canggu': '#locations/canggu',
+  'loc-seminyak': '#locations/seminyak',
+  'loc-ubud': '#locations/ubud',
+  'loc-sanur': '#locations/sanur',
+  'loc-nusadua': '#locations/nusa-dua',
+  'loc-uluwatu': '#locations/uluwatu',
+};
+
+const LABEL_MAP = {
+  'home': 'Home',
+  'protocols': 'Protocols',
+  'labs': 'Lab Testing',
+  'science': 'The Science',
+  'physician': 'Our Physician',
+  'locations': 'Locations',
+  'faq': 'FAQ',
+  'loc-canggu': 'Locations › Canggu',
+  'loc-seminyak': 'Locations › Seminyak',
+  'loc-ubud': 'Locations › Ubud',
+  'loc-sanur': 'Locations › Sanur',
+  'loc-nusadua': 'Locations › Nusa Dua',
+  'loc-uluwatu': 'Locations › Uluwatu',
+};
+
+function nav(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  const el = document.getElementById('view-' + id);
+  if (el) {
+    el.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+  // Update URL hash
+  const hash = URL_MAP[id] || '#' + id;
+  if (hash === '/') {
+    history.pushState(null, '', window.location.pathname);
+  } else {
+    history.pushState(null, '', hash);
+  }
+  // Update page indicator
+  const label = LABEL_MAP[id] || id;
+  document.getElementById('current-page-label').textContent = label;
+  // Update active nav link
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const navMap = { protocols: 0, labs: 1, science: 2, physician: 3, locations: 4, faq: 5 };
+  const links = document.querySelectorAll('.nav-links a');
+  const rootId = id.startsWith('loc-') ? 'locations' : id;
+  if (navMap[rootId] !== undefined) links[navMap[rootId]].classList.add('active');
+}
+
+function faq(btn) {
+  const item = btn.parentElement;
+  const ans = item.querySelector('.fan');
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.view.active .faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.fan').style.maxHeight = '0';
+  });
+  if (!open) {
+    item.classList.add('open');
+    ans.style.maxHeight = ans.scrollHeight + 'px';
+  }
+}
+
+// Handle browser back/forward
+window.addEventListener('popstate', () => {
+  const hash = window.location.hash;
+  const reverseMap = {};
+  Object.entries(URL_MAP).forEach(([k,v]) => reverseMap[v] = k);
+  const id = reverseMap[hash] || 'home';
+  nav(id);
+});
+
+// On load — check hash and navigate
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash;
+  const reverseMap = {};
+  Object.entries(URL_MAP).forEach(([k,v]) => reverseMap[v] = k);
+  if (hash && reverseMap[hash]) nav(reverseMap[hash]);
+});
+</script>
+
+<!-- SITEMAP STRIP — visible navigation to all sections -->
+<div style="position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(12,11,9,.97);border-top:1px solid var(--border2);padding:10px 24px;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;overflow-x:auto;height:48px;white-space:nowrap;">
+  <span style="font-family:var(--mono);font-size:10px;color:var(--gd);letter-spacing:.1em;text-transform:uppercase;margin-right:8px;white-space:nowrap;">All Pages</span>
+  <a onclick="nav('home')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">Home</a>
+  <a onclick="nav('protocols')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">Protocols</a>
+  <a onclick="nav('labs')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">Lab Testing</a>
+  <a onclick="nav('science')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">The Science</a>
+  <a onclick="nav('physician')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">Our Physician</a>
+  <a onclick="nav('locations')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">Locations</a>
+  <a onclick="nav('faq')" style="font-family:var(--mono);font-size:11px;color:var(--td);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;background:var(--bg2);">FAQ</a>
+  <span style="font-family:var(--mono);font-size:10px;color:var(--border2);padding:0 4px;">|</span>
+  <a onclick="nav('loc-canggu')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Canggu</a>
+  <a onclick="nav('loc-seminyak')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Seminyak</a>
+  <a onclick="nav('loc-ubud')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Ubud</a>
+  <a onclick="nav('loc-sanur')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Sanur</a>
+  <a onclick="nav('loc-nusadua')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Nusa Dua</a>
+  <a onclick="nav('loc-uluwatu')" style="font-family:var(--mono);font-size:11px;color:var(--gd);text-decoration:none;cursor:pointer;padding:4px 10px;border:1px solid rgba(201,168,76,.2);border-radius:2px;white-space:nowrap;background:var(--bg2);">Uluwatu</a>
+</div>
+</body>
+</html>
