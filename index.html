@@ -213,12 +213,12 @@ nav {
 }
 
 /* ── VIEWS / SECTIONS ── */
-.view { display: none; padding-top: 64px; }
+.view { display: none; /* padding-top: 64px; */ }
 .view.active { display: block; }
 
-/* RC5 — hero uses 100svh */
+/* RC5 — hero: 100dvh mobile, 100vh desktop */
 .hero {
-  min-height: 100svh;
+  min-height: 100dvh;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -227,7 +227,7 @@ nav {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .hero { padding: var(--sp-16) var(--sp-8) var(--sp-12); }
+  .hero { min-height: 100vh; padding: var(--sp-16) var(--sp-8) var(--sp-12); }
 }
 
 .hbg { position: absolute; inset: 0; background-size: cover; background-position: center; }
@@ -691,7 +691,7 @@ footer { background: var(--bg2); border-top: 1px solid var(--border); padding: v
   <span style="flex:1;"></span>
   <span style="color:var(--tf);">clinicterrain.com</span>
   <span style="color:var(--border2);">·</span>
-  <span style="color:var(--tf);">Preview — all pages in one file</span>
+  <!-- <span style="color:var(--tf);">Preview — all pages in one file</span> -->
 </div>
 
 <!-- WA FLOAT -->
